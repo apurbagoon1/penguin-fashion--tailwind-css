@@ -21,13 +21,30 @@
     </style>
 </head>
 <body class="roboto-font">
-    <header class="bg-[#FFFBF0] p-20">
+    <header class="bg-[#FFFBF0] md:px-32 px-8 py-10">
         <!-- Nav-bar Starts -->
-        <nav>
+        <nav class="md:flex md:justify-between items-center justify-start">
+            <div class="flex justify-between items-center">
+                <a href=""><img class="w-72 h-10" src="assets/icons/logo.png" alt="logo"></a>
+                <div class="md:hidden">
+                    <svg class="w-7 h-7 cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                </div>
+            </div>
 
+            <div class="invisible md:visible">
+                <ul class="flex gap-12">
+                    <li class="list-none"><a class="text-[#3C3C3C] font-medium" href="">Home</a></li>
+                    <li class="list-none"><a class="text-[#3C3C3C] font-medium" href="">Product</a></li>
+                    <li class="list-none"><a class="text-[#3C3C3C] font-medium" href="">About Us</a></li>
+                    <li class="list-none"><a class="text-[#3C3C3C] font-medium" href="">Contact Us</a></li>
+                </ul>
+            </div>
         </nav>
+
         <!-- Banner Starts -->
-        <div class="md:flex md:items-center md:justify-around max-sm:text-center">
+        <div class="md:flex md:items-center md:justify-between max-sm:text-center md:py-10">
             <div class="space-y-3">
                 <h1 class="text-7xl uppercase text-[#FABE4C] bebas-neue-font"> <span>Be the Penguins</span> <br> <span class="text-[#363958]">of Winter</span> </h1>
                 <p class="text-[#3E3E3E] leading-[26px]">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
